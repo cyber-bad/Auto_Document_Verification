@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Verification</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<center>
+		<nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"> KYC DOCUMENT VERIFICATION</a>
+
+        </div>
+        <br>
+    </nav>
+    	<br><br>
+		<img src=" {{url_for('send_image', filename=image_name)}}" height="300" width="500">
+
+		<br><br>
+
+
+	</center>
+
+	<div class="container">
+
+			<div class="row">
+				<div class="col-lg-6" style="padding: 30;
+    										border-radius: 5px;
+    										border: 4px solid #ff5248; 
+    										box-shadow: 0 3px 10px rgba(0,0,0,.25);">
+
+    			<h2>Data from Image</h2>
+    				Name: 
+    				<br>
+
+						<textarea class="form-control"> {{name}}	
+						</textarea>
+					<br>
+
+					Aadhar Number:
+					<br>
+
+					<textarea class="form-control">{{aadh_num}}
+					</textarea>
+
+					<br>
+
+					Date of Birth:
+					<br>
+
+					<textarea class="form-control">{{dob}}
+					</textarea>
+
+					<br>
+
+					Gender:
+					<br>
+					<textarea class="form-control">{{gender}}
+					</textarea>
+					<br>
+					
+				</div>
+
+
+				<div class="col-lg-6" style="padding: 30;
+    										border-radius: 5px;
+    										border: 4px solid #ff5248; 
+    										box-shadow: 0 3px 10px rgba(0,0,0,.25);">
+    			<h2>Data from Database</h2>	
+    				Name: 
+    				<br>
+					<strong>
+						<textarea class="form-control"> 	
+						</textarea></strong>
+					<br>
+
+					Aadhar Number:
+					<br>
+					<strong>
+					<textarea class="form-control">
+					</textarea></strong>					
+
+					<br>
+
+					Date of Birth:
+					<br>
+					<strong>
+					<textarea class="form-control">
+					</textarea></strong>
+
+					<br>
+
+					Gender:
+					<br>
+					<strong><textarea class="form-control">
+					</textarea></strong>
+					<br>
+
+
+				</div>
+				
+			</div>
+		</div>
+
+		<br><br><br><br>
+
+
+
+
+</body>
+</html>
